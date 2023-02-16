@@ -35,12 +35,8 @@ const createTradeRow = (trade) => {
     color = 'rgba(255, 255, 255, 0.99)';
   } else if (totalValue >= 100000) {
     color = 'rgba(255, 255, 255, 0.80)';
-  } else if (totalValue >= 10000) {
-    color = 'rgba(255, 255, 255, 0.60)';
-  } else if (totalValue >= 1000) {
-    color = 'rgba(255, 255, 255, 0.40)';
   } else {
-    color = 'rgba(255, 255, 255, 0.20)';
+    color = 'rgba(255, 255, 255, 0.50)';
   }
 
   totalCell.style.color = color;
@@ -60,8 +56,6 @@ const formatTime = (time) => {
   }
 
   const times = [
-    { unit: 'day', seconds: 86400 },
-    { unit: 'hour', seconds: 3600 },
     { unit: 'min', seconds: 60 },
     { unit: 'sec', seconds: 1 },
   ];
